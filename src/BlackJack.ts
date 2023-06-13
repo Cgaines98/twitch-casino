@@ -26,9 +26,12 @@ class BlackjackGame {
   
   playPlayerTurn() {
     console.log('Player hand:', this.player.hand);
-    console.log('Dealer hand:', this.dealer.hand[0]);
-    
+    console.log('Dealer first card:', this.dealer.hand[0]);
+    let handValue = this.player.getHandValue();
     // Implement player's turn logic here
+    if (handValue <= 21){
+      
+    }
   }
   
   playDealerTurn() {
